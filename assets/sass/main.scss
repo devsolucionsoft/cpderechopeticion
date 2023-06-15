@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  src: url("../fonts/D-DINCondensed.ttf");
+  font-family: "D-DINCondensed", sans-serif;
+}
+
+// Media sizes
+@mixin screen-sm {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin screen-md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin screen-lg {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin screen-lgx {
+  @media (max-width: 1080px) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (max-width: 1290px) {
+    @content;
+  }
+}
+
+$purple: #5a0e3f;
+$red: #df2043;
+$gray: #636267;
+$gray-secondary: #333333;
+$dark: #1e120d;
+$white: #ffffff;
+
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "D-DINCondensed", sans-serif;
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-secondary;
+  font-size: 62%;
+}
+
+p,
+div {
+  font-size: 1rem;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  margin-bottom: 5.3rem;
+  .header-contain {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+
+    .content {
+      padding-top: 10rem;
+      .logo {
+        width: 33rem;
+        margin-bottom: 3.3rem;
+      }
+      h1 {
+        font-size: 3.5rem;
+        font-family: $font-primary;
+        font-weight: 400;
+        color: $gray;
+        span {
+          font-size: 6rem;
+          font-weight: 700;
+          color: $dark;
+        }
+      }
+    }
+
+    .outstanding {
+      background-color: $gray-secondary;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .outstanding-content {
+        background-color: $purple;
+        padding: 2.5rem 4rem;
+        p {
+          font-size: 1.3rem;
+          font-family: $font-primary;
+          color: $white;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+
+    @include screen-xl() {
+      .content {
+        .logo {
+          width: 24rem;
+        }
+        h1 {
+          font-size: 2.2rem;
+          span {
+            font-size: 3.5rem;
+          }
+        }
+      }
+      .outstanding {
+        .outstanding-content {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @include screen-lgx() {
+      padding: 0 0%;
+      flex-direction: column-reverse;
+      .content {
+        padding: 0 5%;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo {
+          width: 40%;
+        }
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+          span {
+            font-size: 3rem;
+          }
+        }
+      }
+      .outstanding {
+        .outstanding-content {
+          padding: 1.5rem 5%;
+          p {
+            font-size: 1rem;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.step-form {
+  margin-bottom: 6rem;
+  .section-contain {
+    padding: 0 15%;
+    @include screen-md() {
+      padding: 0 5%;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      > span {
+        height: 2.2rem;
+        width: 2.2rem;
+        background-color: $red;
+        font-size: 2rem;
+        color: $white;
+        border-radius: 100%;
+        @include flex-center();
+      }
+      h2 {
+        font-size: 2.5rem;
+        color: $red;
+        font-family: $font-secondary;
+        letter-spacing: -0.1rem;
+        word-spacing: -0.2rem;
+        span {
+          color: $gray;
+          font-size: 1.8rem;
+        }
+      }
+
+      @include screen-xl() {
+        > span {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 2.2rem;
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      @include screen-md() {
+        > span {
+          font-size: 1rem;
+        }
+        h2 {
+          font-size: 2rem;
+          span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .content {
+      margin-left: 3.6rem;
+      width: 80%;
+      font-family: $font-secondary;
+      margin-bottom: 3.2rem;
+      h5 {
+        font-size: 1.9rem;
+        font-weight: bold;
+        margin-bottom: 1.3rem;
+      }
+      p {
+        font-size: 1.8rem;
+        margin-bottom: 1.3rem;
+        font-weight: 100;
+        color: $dark;
+      }
+      @include screen-xl() {
+        h5 {
+          font-size: 1.7rem;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+      @include screen-md() {
+        h5 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .form {
+      margin-left: 3.6rem;
+      .title-form {
+        font-size: 2rem;
+        font-family: $font-secondary;
+        color: $gray;
+        font-weight: lighter;
+        margin-bottom: 1.6rem;
+        @include screen-xl() {
+          font-size: 1.4rem;
+        }
+        @include screen-md() {
+          font-size: 1.2rem;
+        }
+      }
+      .form-inputs {
+        .inputs-flex {
+          display: flex;
+          align-items: center;
+          gap: 3rem;
+          .input-contain {
+            width: 100%;
+          }
+          @include screen-md() {
+            flex-direction: column;
+            gap: 0;
+          }
+        }
+        .input-contain {
+          margin-bottom: 2rem;
+          .footer {
+            background-color: #b0b0b0;
+            font-size: 2rem;
+            float: right;
+            margin: 1.5rem 0;
+            color: $red;
+            padding: 0.4rem 1rem;
+            margin-right: 5rem;
+            span {
+              color: $gray-secondary;
+              font-size: 2rem;
+            }
+            @include screen-xl() {
+              font-size: 1.6rem;
+              span {
+                font-size: 1.4rem;
+              }
+            }
+            @include screen-md() {
+              font-size: 1.2rem;
+              span {
+                font-size: 1.2rem;
+              }
+            }
+          }
+          label {
+            font-size: 1.8rem;
+            font-weight: bold;
+          }
+          .input-item {
+            margin-top: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+            input,
+            textarea {
+              font-size: 2rem;
+              padding: 1rem 1.7rem;
+              border-radius: 0.8rem;
+              border: 1px solid $gray;
+              font-family: $font-secondary;
+              width: 100%;
+              @include screen-xl() {
+                font-size: 1.6rem;
+                padding: 0.8rem 1.5rem;
+              }
+              @include screen-md() {
+                font-size: 1.2rem;
+                padding: 0.8rem 1.4rem;
+              }
+            }
+            textarea {
+              height: 5rem;
+            }
+            input.error {
+              margin-bottom: 2rem;
+            }
+            label.error {
+              top: 4.8rem;
+              font-size: 1.6rem;
+              font-weight: normal;
+              position: absolute;
+              color: $red;
+            }
+            @include screen-xl() {
+              label.error {
+                font-size: 1.4rem;
+              }
+            }
+            @include screen-md() {
+              input.error {
+                margin-bottom: 1rem;
+              }
+              label.error {
+                top: 3.8rem;
+                font-size: 1.2rem;
+                font-weight: normal;
+                position: absolute;
+                color: $red;
+              }
+            }
+            span {
+              font-size: 3rem;
+              position: relative;
+              color: red;
+              height: 5rem;
+              width: 4rem;
+              margin-bottom: 0.5rem;
+              cursor: pointer;
+              img {
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                width: 3.2rem;
+              }
+              @include screen-md() {
+                font-size: 2rem;
+                height: 4rem;
+                img {
+                  width: 2.5rem;
+                }
+              }
+              .tooltip {
+                position: absolute;
+                bottom: 0rem;
+                right: -5rem;
+                width: 0px;
+                overflow: hidden;
+                .line {
+                  height: 4rem;
+                  width: 3px;
+                  bottom: 2.8rem;
+                  right: 6.5rem;
+                  position: absolute;
+                  background-color: #636267;
+                }
+                .content {
+                  padding: 2rem 2.5rem;
+                  border-radius: 2rem;
+                  box-shadow: 6px 6px 6px #0000003d;
+                  background-color: #636267;
+                  margin-bottom: 4rem;
+                  p {
+                    color: $white;
+                    font-size: 1.4rem;
+                    font-family: $font-primary;
+                    font-weight: 500;
+                    b {
+                      font-size: inherit;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+              &:hover {
+                .tooltip {
+                  width: 480px;
+                  padding: 0 2rem 2rem 0;
+                }
+              }
+            }
+          }
+
+          .textarea-item {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-end;
+            margin-top: 0.3rem;
+            .requests-list {
+              width: 100%;
+              textarea {
+                width: calc(100% - 3.4rem);
+                font-size: 2rem;
+                padding: 1rem 1.7rem;
+                height: 10rem;
+                border-radius: 0.8rem;
+                border: 1px solid $gray;
+                margin-top: 1rem;
+              }
+            }
+            textarea.error {
+              margin-bottom: 1rem;
+            }
+            label.error {
+              font-size: 1.6rem;
+              font-weight: normal;
+              color: $red;
+            }
+            @include screen-md() {
+              textarea.error {
+                margin-bottom: 0.5rem;
+              }
+              label.error {
+                font-size: 1.2rem;
+              }
+            }
+            span {
+              cursor: pointer;
+              font-size: 3rem;
+              position: relative;
+              color: red;
+              height: 5rem;
+              width: 4rem;
+              margin-bottom: 0.5rem;
+              img {
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                width: 3.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  button {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: $red;
+    color: $white;
+    font-size: 3.2rem;
+    padding: 1.4rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  @include screen-xl() {
+    button {
+      font-size: 2.4rem;
+      img {
+        height: 2.5rem;
+      }
+    }
+  }
+  @include screen-md() {
+    button {
+      font-size: 2rem;
+      img {
+        height: 2.5rem;
+      }
+    }
+  }
+}
+
+#footer {
+  margin-top: 12rem;
+  .footer-contain {
+    .footer-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $gray;
+      padding: 2rem 10%;
+      gap: 1rem;
+      img {
+        width: 3rem;
+      }
+      p {
+        font-size: 2.3rem;
+        font-family: $font-primary;
+        color: $white;
+      }
+      @include screen-xl() {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+      @include screen-md() {
+        flex-direction: column;
+        p {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #5a0e3f;
+      color: $white;
+      padding: 2.5rem 8%;
+      > a {
+        color: $white;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+      @include screen-md() {
+        flex-direction: column;
+      }
+      .links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        a {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          font-family: $font-primary;
+          font-weight: lighter;
+          font-style: italic;
+          font-size: 1.4rem;
+          color: $white;
+          text-decoration: none;
+          span {
+            width: 2.7rem;
+            height: 2.7rem;
+            background-color: $red;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 50%;
+            }
+          }
+          @include screen-xl() {
+            font-size: 1.2rem;
+            span {
+              width: 2.3rem;
+              height: 2.4rem;
+            }
+          }
+        }
+        @include screen-md() {
+          gap: 1rem;
+          margin: 5rem 0;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.lds-ellipsis div {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.swal2-popup {
+  font-size: 2rem !important;
+}
+
+button.swal2-confirm {
+  font-size: 2rem !important;
+}
+
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  background-color: #fff;
+  padding: 6rem;
+  max-width: 70%;
+  max-height: 100vh;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  position: relative;
+
+  background-color: $purple;
+  border-radius: 30px;
+
+  .logo {
+    width: 150px;
+  }
+
+  .close {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    img {
+      height: 4rem;
+    }
+  }
+
+  p {
+    font-size: 2.3rem;
+    color: $white;
+    font-family: $font-primary;
+    font-weight: 200;
+    b {
+      font-size: inherit;
+      font-weight: 800;
+    }
+  }
+
+  @include screen-md() {
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    .logo {
+      width: 80px;
+    }
+    p {
+      font-size: 1.5rem;
+      b {
+        font-size: inherit;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}

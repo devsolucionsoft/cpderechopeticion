@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUESTIÓN PÚBLICA | Derecho de petición</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <header id="header">
+      <div class="header-contain">
+        <div class="content">
+          <img
+            class="logo"
+            src="./assets//images/logo.svg"
+            alt="Logo de Cuestión Pública"
+          />
+          <h1>
+            HERRAMIENTA PARA GENERAR UN <br /><span>DERECHO DE PETICIÓN</span>
+          </h1>
+        </div>
+
+        <div class="outstanding">
+          <div class="outstanding-content">
+            <p>
+              VISUALIZA ESTE MANUAL DONDE <br />
+              TE EXPLICAMOS LAS PARTES<br />
+              QUE COMPONEN EL DERECHO<br />
+              DE PETICIÓN Y COMO SE<br />
+              VERÍA UNA VEZ ESTE LA <br />
+              INFORMACIÓN CARGADA
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <form action="" id="form-page">
+      <section class="step-form">
+        <div class="section-contain">
+          <header>
+            <span>1</span>
+            <h2>Datos a quién va dirigido este derecho de petición</h2>
+          </header>
+          <div class="content">
+            <p>
+              Para que conozcas el contenido que debes incluir en cada casilla,
+              pasa el cursor por el icono sabrás más al respecto.
+            </p>
+          </div>
+
+          <section class="form">
+            <h3 class="title-form">Completa los campos a continuación</h3>
+
+            <div class="form-inputs">
+              <div class="inputs-flex">
+                <div class="input-contain">
+                  <label for="city">Ciudad</label>
+                  <div class="input-item">
+                    <input
+                      type="text"
+                      placeholder="Ciudad del que escribe"
+                      name="city"
+                    />
+                    <span>
+                      *
+                      <img src="./assets/images/help.svg" alt="" />
+                      <div class="tooltip">
+                        <div class="content">
+                          <p>
+                            La ciudad de quien escribe y la fecha en la que se
+                            escribe dejan constancia del lugar y la fecha en la
+                            que se firma la petición. <b>IMPORTANTE</b>: En
+                            realidad, la fecha más relevante es aquella en la
+                            que se presenta en la petición ante la entidad. La
+                            fecha en la que se envía por correo electrónico o la
+                            fecha en la que se presenta en la ventanilla.
+                          </p>
+                        </div>
+                        <span class="line"></span>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="input-contain">
+                  <label for="date">Fecha</label>
+                  <div class="input-item">
+                    <input
+                      type="date"
+                      name="date"
+                      placeholder="Fecha en la que se firma la petición"
+                    />
+                    <span>
+                      *
+                      <img src="./assets/images/help.svg" alt="" />
+                      <div class="tooltip">
+                        <div class="content">
+                          <p>
+                            La ciudad de quien escribe y la fecha en la que se
+                            escribe dejan constancia del lugar y la fecha en la
+                            que se firma la petición. <b>IMPORTANTE</b>: En
+                            realidad, la fecha más relevante es aquella en la
+                            que se presenta en la petición ante la entidad. La
+                            fecha en la que se envía por correo electrónico o la
+                            fecha en la que se presenta en la ventanilla.
+                          </p>
+                        </div>
+                        <span class="line"></span>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-contain">
+                <label for="official_name"
+                  >Nombre(s) y apellido(s) del funcionario(a)</label
+                >
+                <div class="input-item">
+                  <input
+                    type="text"
+                    name="official_name"
+                    placeholder="Nombre del funcionario al que se le pregunta"
+                  />
+                  <span>
+                    <img src="./assets/images/help.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+
+              <div class="input-contain">
+                <label for="official_position">Cargo del funcionario(a)</label>
+                <div class="input-item">
+                  <input
+                    type="text"
+                    name="official_position"
+                    placeholder="Cargo del funcionario al que se le pregunta"
+                  />
+                  <span>
+                    <img src="./assets/images/help.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+
+              <div class="input-contain">
+                <label for="entity_directs">Entidad a la que se dirige</label>
+                <div class="input-item">
+                  <input
+                    type="text"
+                    name="entity_directs"
+                    placeholder="Nombre de la entidad o institución que recibira este derecho de petición"
+                  />
+                  <span>
+                    *
+                    <img src="./assets/images/help.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="step-form">
+        <div class="section-contain">
+          <header>
+            <span>2</span>
+            <h2>Datos de quién hace este derecho de petición</h2>
+          </header>
+
+          <section class="form">
+            <h3 class="title-form">Completa los campos a continuación</h3>
+
+            <div class="form-inputs">
+              <div class="input-contain">
+                <label for="name_author">Nombre(s) y apellido(s)</label>
+                <div class="input-item">
+                  <input
+                    type="text"
+                    name="name_author"
+                    placeholder="Nombre de quién hace este derecho de petición"
+                  />
+                  <span>
+                    *
+                    <img src="./assets/images/help.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+              <div class="inputs-flex">
+                <div class="input-contain">
+                  <label for="document_author">Número de cédula</label>
+                  <div class="input-item">
+                    <input
+                      type="number"
+                      name="document_author"
+                      placeholder="Solo números, sin espacios"
+                    />
+                    <span>
+                      *
+                      <img src="./assets/images/help.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+                <div class="input-contain">
+                  <label for="">Ciudad de expedición de la cédula</label>
+                  <div class="input-item">
+                    <input
+                      type="text"
+                      name="city_author"
+                      placeholder="Ej: Bogotá"
+                    />
+                    <span>
+                      *
+                      <img src="./assets/images/help.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="step-form">
+        <div class="section-contain">
+          <header>
+            <span>3</span>
+            <h2>Descripción de la(s) petición(es)</h2>
+          </header>
+
+          <div class="content">
+            <h5>Ten encuenta:</h5>
+            <p>
+              1. En Cuestión Pública procuramos preguntar números, nombres,
+              documentos que además sirvan de soporte. Así evitamos preguntar
+              opiniones y apreciaciones subjetivas de funcionarios que se
+              podrían conseguir por otra vía o que no pueden ser usados como
+              sustento.
+            </p>
+            <p>
+              2. En Cuestión Pública pedimos la información en los formatos que
+              los necesitamos. En formato digital, en cuadros de Excel, en texto
+              escaneado, en imagen, etc.
+            </p>
+          </div>
+
+          <section class="form">
+            <h3 class="title-form">Completa los campos a continuación</h3>
+
+            <div class="form-inputs">
+              <div class="input-contain">
+                <label for="petition_text">Petición 1 </label>
+                <div class="textarea-item">
+                  <div class="requests-list" id="requests-list">
+                    <textarea
+                      type="text"
+                      name="petition_text"
+                      placeholder="Este es el lugar en el que escribimos la información que queremos pedir. Se pueden pedir: documentos oficiales, archivos, datos numéricos, valores de gastos de contratos, listados de funcionarios, en fin. Todo depende de lo que estemos buscando. Da clic aquí para escribir."
+                    ></textarea>
+                  </div>
+                  <span id="add-petition">
+                    *
+                    <img src="./assets/images/more.svg" alt="" />
+                  </span>
+                </div>
+                <span class="footer"
+                  >Da clic en el <span>+</span> agrega otra petición</span
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="step-form">
+        <div class="section-contain">
+          <header>
+            <span>1</span>
+            <h2>
+              Notificaciones
+              <span
+                >(A donde queremos que nos llegue la respuesta a este
+                derecho)</span
+              >
+            </h2>
+          </header>
+          <div class="content">
+            <p>
+              En este punto escribimos si queremos recibir la información de
+              manera digital a través de un correo electrónico o físicamente en
+              una dirección.
+            </p>
+            <h5>Ten encuenta:</h5>
+            <p>
+              En Cuestión Pública nos gusta recibir las respuestas al correo
+              electrónico, por las siguientes razones:
+            </p>
+            <p>
+              1. Podemos recibir información de cualquier lugar del país sin
+              complicaciones y sin costos.
+            </p>
+            <p>
+              2. Facilita la recepción de la información en formatos digital más
+              manejables y procesables para buscar datos y filtrarlos.
+            </p>
+            <p>
+              3. Le ahorramos papel al planeta. En algunas ocasiones también se
+              escribe el número telefónico. Sobre todo, en casos de que algunos
+              funcionarios requieran información adicional. También es
+              recomendado que usen este medio las personas con discapacidad
+              visual
+            </p>
+          </div>
+
+          <section class="form">
+            <h3 class="title-form">Completa los campos a continuación</h3>
+
+            <div class="form-inputs">
+              <div class="input-contain">
+                <label for="">Correo electronico</label>
+                <div class="input-item">
+                  <input
+                    type="email"
+                    name="email_response"
+                    placeholder="Ej: info@gmail.com"
+                  />
+                  <span>
+                    *
+                    <img src="./assets/images/help.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+              <div class="input-contain">
+                <label for="adress_response"
+                  >Dirección a donde quieres que te llegue la respuesta de
+                  manera impresa</label
+                >
+                <div class="input-item">
+                  <textarea
+                    type="text"
+                    name="address_response"
+                    placeholder="Ej: Carrera, Av., Calle, Diagonal, transversal; Nombre del conjunto, #Apto, #torre; nombre del barrio, nombre de la ciudad y departamento."
+                  ></textarea>
+                  <span>
+                    <img src="./assets/images/help.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="step-form">
+        <div class="section-contain">
+          <header>
+            <span>1</span>
+            <h2>
+              Firma
+              <span
+                >(Son los datos de quién hace este derecho de petición y se
+                ubicara al final del documento)</span
+              >
+            </h2>
+          </header>
+          <div class="content">
+            <h5>Ten encuenta:</h5>
+            <p>
+              Si la petición se imprime en físico, encima puede ir la firma. Si
+              se envía por correo electrónico no hay necesidad de firma si se
+              envía del correo personal.
+            </p>
+          </div>
+
+          <section class="form">
+            <h3 class="title-form">Completa los campos a continuación</h3>
+
+            <div class="form-inputs">
+              <div class="input-contain">
+                <label for="name_signature">Nombre(s) y apellido(s)</label>
+                <div class="input-item">
+                  <input
+                    type="text"
+                    name="name_signature"
+                    placeholder="Nombre de quién hace este derecho de petición"
+                  />
+                  <span>
+                    *
+                    <img src="./assets/images/help.svg" alt="" />
+                  </span>
+                </div>
+              </div>
+
+              <div class="inputs-flex">
+                <div class="input-contain">
+                  <label for="">Número de identificación</label>
+                  <div class="input-item">
+                    <input
+                      type="number"
+                      name="document_signature"
+                      placeholder="Solo números, sin espacios"
+                    />
+                    <span>
+                      *
+                      <img src="./assets/images/help.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+                <div class="input-contain">
+                  <label for="position_signature">Cargo</label>
+                  <div class="input-item">
+                    <input
+                      type="text"
+                      name="position_signature"
+                      placeholder="Es opcional"
+                    />
+                    <span>
+                      <img src="./assets/images/help.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="button">
+        <button type="submit" class="submit-button">
+          <img src="./assets//images/doc.svg" alt="" />
+          Descargar archivo
+        </button>
+        <button class="loader-button">
+          <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </button>
+      </section>
+    </form>
+
+    <footer id="footer">
+      <div class="footer-contain">
+        <div class="footer-top">
+          <img src="./assets/images/icon.svg" alt="" />
+          <p>
+            Cuestión Pública es unaunidad de periodismo de investigación al
+            servicio del ciudadano de a pie.
+          </p>
+        </div>
+        <div class="footer-bottom">
+          <a href="WWW.CUESTIONPUBLICA.COM">WWW.CUESTIONPUBLICA.COM</a>
+          <ul class="links">
+            <li>
+              <a href="">
+                <span><img src="./assets/images/twitter.svg" alt="" /></span>
+                @CUESTION_P
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span><img src="./assets/images/instagram.svg" alt="" /></span>
+                @CUESTIONP
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span><img src="./assets/images/facebook.svg" alt="" /></span>
+                @CUESTIONP
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span><img src="./assets/images/tik-tok.svg" alt="" /></span>
+                @CUESTIONP
+              </a>
+            </li>
+          </ul>
+          <a href="HOLA@CUESTIONPUBLICA.COM">HOLA@CUESTIONPUBLICA.COM</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <img
+            class="logo"
+            src="./assets//images/logo-vertical.svg"
+            alt="Logo de Cuestión Pública"
+          />
+          <button
+            class="close"
+            data-micromodal-close
+            aria-label="Close this dialog window"
+          >
+            <img
+              src="./assets//images/modal-close.svg"
+              alt="icono de cerrar modal"
+            />
+          </button>
+          <p>
+            <b>
+              En Cuestión Pública creamos una herramienta para que los
+              ciudadanos y las ciudadanas puedan generar derechos de petición de
+              forma fácil y rápida. Es nuestro aporte para que juntos ejerzamos
+              el derecho a acceder a información de interés público</b
+            >. Solo debes completar la información en las casillas
+            correspondientes y descargar el PDF.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.37.11/docxtemplater.js"></script>
+    <script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip-utils.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script> -->
+
+    <script>
+      const required_message = "Este campo es requerido"
+      const invalidmail_message = "Ingresa un email válido"
+      const invaliddocument_message = "Ingresa un documento válido"
+      let petitionCount = 2
+
+      $(function () {
+        MicroModal.show("modal-1")
+        $(".loader-button").hide()
+
+        $("#add-petition").click(function () {
+          const htmlPetition = `<textarea
+                                      type="text"
+                                      name="petition_text_${petitionCount}"
+                                      placeholder="Este es el lugar en el que escribimos la información que queremos pedir. Se pueden pedir: documentos oficiales, archivos, datos numéricos, valores de gastos de contratos, listados de funcionarios, en fin. Todo depende de lo que estemos buscando. Da clic aquí para escribir."
+                                    ></textarea>`
+          $("#requests-list").append(htmlPetition)
+          petitionCount++
+        })
+
+        $(function () {
+          $("#form-page").validate({
+            rules: {
+              city: "required",
+              date: "required",
+              entity_directs: "required",
+              name_author: "required",
+              document_author: {
+                required: true,
+                number: true,
+              },
+              city_author: "required",
+              petition_text: "required",
+              email_response: {
+                required: true,
+                email: true,
+              },
+              name_signature: "required",
+              document_signature: {
+                required: true,
+                number: true,
+              },
+            },
+            messages: {
+              city: required_message,
+              date: required_message,
+              entity_directs: required_message,
+              name_author: required_message,
+              document_author: {
+                required: required_message,
+                number: invaliddocument_message,
+              },
+              city_author: required_message,
+              petition_text: required_message,
+              email_response: {
+                required: required_message,
+                email: invalidmail_message,
+              },
+              name_signature: required_message,
+              document_signature: {
+                required: required_message,
+                number: invaliddocument_message,
+              },
+            },
+            submitHandler: function (form) {
+              $(".submit-button").hide()
+              $(".loader-button").show()
+
+              const formData = new FormData(form)
+              var formJson = {}
+              let petitions = []
+
+              formData.forEach((value, key) => {
+                if (key.includes("petition_text")) {
+                  petitions.push({
+                    index: petitions.length + 1,
+                    petition_text: value,
+                  })
+                } else {
+                  formJson[key] = value
+                }
+              })
+
+              formJson["petitions"] = petitions
+              formJson[
+                "address_response"
+              ] = ` / ${formJson["address_response"]}`
+              generate(formJson)
+            },
+          })
+        })
+      })
+
+      function loadFile(url, callback) {
+        PizZipUtils.getBinaryContent(url, callback)
+      }
+      window.generate = function generate(formJson) {
+        loadFile(
+          "./assets/docs/template.docx",
+          async function (error, content) {
+            if (error) {
+              throw error
+            }
+            const zip = new PizZip(content)
+            const doc = new window.docxtemplater(zip, {
+              paragraphLoop: true,
+              linebreaks: true,
+            })
+
+            doc.render(formJson)
+
+            const blobDoc = doc.getZip().generate({
+              type: "blob",
+              mimeType:
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            })
+
+            saveAs(blobDoc, "derecho-de-peticion.docx")
+
+            //  // Para convertir el .docx a pdf
+            //  const pdfContent = {
+            //   content: [
+            //     {
+            //       text: doc.getZip().generate({ type: "blob" }),
+            //       encoding: "base64",
+            //     },
+            //   ],
+            // }
+
+            // // Generar el PDF
+            // const pdfDocGenerator = pdfMake.createPdf(pdfContent)
+            // pdfDocGenerator.getBlob((blob) => {
+            //   // Descargar el archivo PDF resultante
+            //   const downloadLink = document.createElement("a")
+            //   downloadLink.href = URL.createObjectURL(blob)
+            //   downloadLink.download = "documento.pdf"
+            //   downloadLink.click()
+            // })
+
+            setTimeout(() => {
+              Swal.fire(
+                "Derecho de petición generado",
+                "Revisa tus descargas..."
+              )
+
+              $(".submit-button").show()
+              $(".loader-button").hide()
+            }, 800)
+          }
+        )
+      }
+    </script>
+  </body>
+</html>
