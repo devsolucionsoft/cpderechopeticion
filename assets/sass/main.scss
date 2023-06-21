@@ -311,6 +311,15 @@ div {
           label {
             font-size: 1.8rem;
             font-weight: bold;
+            span {
+              font-size: inherit;
+              opacity: 0.8;
+              color: rgb(28, 28, 28);
+              font-weight: 600;
+            }
+            .r {
+              color: $red;
+            }
           }
           .input-item {
             margin-top: 0.3rem;
@@ -733,6 +742,19 @@ button.swal2-confirm {
     b {
       font-size: inherit;
       font-weight: 800;
+    }
+  }
+
+  @include screen-xl() {
+    .logo {
+      width: 100px;
+    }
+    p {
+      font-size: 2rem;
+      b {
+        font-size: inherit;
+        font-weight: 500;
+      }
     }
   }
 

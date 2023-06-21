@@ -63,7 +63,9 @@
             <div class="form-inputs">
               <div class="inputs-flex">
                 <div class="input-contain">
-                  <label for="city">Ciudad</label>
+                  <label for="city"
+                    >Ciudad - <span class="r">(requerido)</span></label
+                  >
                   <div class="input-item">
                     <input
                       type="text"
@@ -78,11 +80,7 @@
                           <p>
                             La ciudad de quien escribe y la fecha en la que se
                             escribe dejan constancia del lugar y la fecha en la
-                            que se firma la petición. <b>IMPORTANTE</b>: En
-                            realidad, la fecha más relevante es aquella en la
-                            que se presenta en la petición ante la entidad. La
-                            fecha en la que se envía por correo electrónico o la
-                            fecha en la que se presenta en la ventanilla.
+                            que se firma la petición.
                           </p>
                         </div>
                         <span class="line"></span>
@@ -91,7 +89,9 @@
                   </div>
                 </div>
                 <div class="input-contain">
-                  <label for="date">Fecha</label>
+                  <label for="date"
+                    >Fecha - <span class="r">(requerido)</span></label
+                  >
                   <div class="input-item">
                     <input
                       type="date"
@@ -122,7 +122,8 @@
 
               <div class="input-contain">
                 <label for="official_name"
-                  >Nombre(s) y apellido(s) del funcionario(a)</label
+                  >Nombre(s) y apellido(s) del funcionario(a) -
+                  <span>(opcional)</span></label
                 >
                 <div class="input-item">
                   <input
@@ -132,12 +133,20 @@
                   />
                   <span>
                     <img src="./assets/images/help.svg" alt="" />
+                    <div class="tooltip">
+                      <div class="content">
+                        <p>Nombre del funcionario al que se le pregunta</p>
+                      </div>
+                      <span class="line"></span>
+                    </div>
                   </span>
                 </div>
               </div>
 
               <div class="input-contain">
-                <label for="official_position">Cargo del funcionario(a)</label>
+                <label for="official_position"
+                  >Cargo del funcionario(a) - <span>(opcional)</span></label
+                >
                 <div class="input-item">
                   <input
                     type="text"
@@ -146,12 +155,25 @@
                   />
                   <span>
                     <img src="./assets/images/help.svg" alt="" />
+                    <div class="tooltip">
+                      <div class="content">
+                        <p>
+                          Lo mejor es identificar previamente el nombre y el
+                          cargo de quien tiene la información o quien tiene la
+                          capacidad de entregarla.
+                        </p>
+                      </div>
+                      <span class="line"></span>
+                    </div>
                   </span>
                 </div>
               </div>
 
               <div class="input-contain">
-                <label for="entity_directs">Entidad a la que se dirige</label>
+                <label for="entity_directs"
+                  >Entidad a la que se dirige -
+                  <span class="r">(requerido)</span></label
+                >
                 <div class="input-item">
                   <input
                     type="text"
@@ -161,6 +183,15 @@
                   <span>
                     *
                     <img src="./assets/images/help.svg" alt="" />
+                    <div class="tooltip">
+                      <div class="content">
+                        <p>
+                          Nombre de la entidad o institución que recibira este
+                          derecho de petición
+                        </p>
+                      </div>
+                      <span class="line"></span>
+                    </div>
                   </span>
                 </div>
               </div>
@@ -181,7 +212,10 @@
 
             <div class="form-inputs">
               <div class="input-contain">
-                <label for="name_author">Nombre(s) y apellido(s)</label>
+                <label for="name_author"
+                  >Nombre(s) y apellido(s) -
+                  <span class="r">(requerido)</span></label
+                >
                 <div class="input-item">
                   <input
                     type="text"
@@ -191,12 +225,27 @@
                   <span>
                     *
                     <img src="./assets/images/help.svg" alt="" />
+                    <div class="tooltip">
+                      <div class="content">
+                        <p>
+                          Toda petición debe iniciar por identificar a la
+                          persona que hace la petición. Con nombre y apellidos.
+                          Ponemos el nombre con el fin de hacer ver que pedir
+                          información es un derecho de cualquier persona, sin
+                          discriminación.
+                        </p>
+                      </div>
+                      <span class="line"></span>
+                    </div>
                   </span>
                 </div>
               </div>
               <div class="inputs-flex">
                 <div class="input-contain">
-                  <label for="document_author">Número de cédula</label>
+                  <label for="document_author"
+                    >Número de cédula -
+                    <span class="r">(requerido)</span></label
+                  >
                   <div class="input-item">
                     <input
                       type="number"
@@ -206,11 +255,20 @@
                     <span>
                       *
                       <img src="./assets/images/help.svg" alt="" />
+                      <div class="tooltip">
+                        <div class="content">
+                          <p>La identificación debe ir con cédula.</p>
+                        </div>
+                        <span class="line"></span>
+                      </div>
                     </span>
                   </div>
                 </div>
                 <div class="input-contain">
-                  <label for="">Ciudad de expedición de la cédula</label>
+                  <label for=""
+                    >Ciudad de expedición de la cédula -
+                    <span class="r">(requerido)</span></label
+                  >
                   <div class="input-item">
                     <input
                       type="text"
@@ -220,6 +278,15 @@
                     <span>
                       *
                       <img src="./assets/images/help.svg" alt="" />
+                      <div class="tooltip">
+                        <div class="content">
+                          <p>
+                            La identificación debe ir con la ciudad de
+                            expedición de la cédula.
+                          </p>
+                        </div>
+                        <span class="line"></span>
+                      </div>
                     </span>
                   </div>
                 </div>
@@ -257,7 +324,9 @@
 
             <div class="form-inputs">
               <div class="input-contain">
-                <label for="petition_text">Petición 1 </label>
+                <label for="petition_text"
+                  >Petición 1 - <span class="r">(requerido)</span></label
+                >
                 <div class="textarea-item">
                   <div class="requests-list" id="requests-list">
                     <textarea
@@ -325,7 +394,10 @@
 
             <div class="form-inputs">
               <div class="input-contain">
-                <label for="">Correo electronico</label>
+                <label for=""
+                  >Correo electronico -
+                  <span class="r">(requerido)</span></label
+                >
                 <div class="input-item">
                   <input
                     type="email"
@@ -335,13 +407,38 @@
                   <span>
                     *
                     <img src="./assets/images/help.svg" alt="" />
+                    <div class="tooltip">
+                      <div class="content">
+                        <p>
+                          En este punto escribimos si queremos recibir la
+                          información de manera digital a través de un correo
+                          electrónico o físicamente en una dirección.
+                          <br /><br />
+                          RECOMENDACIÓN: En Cuestión Pública nos gusta recibir
+                          las repespuestas al correo electrónico, por las
+                          siguientes razones:<br /><br />
+                          1. Podemos recibir información de cualquier lugar del
+                          país sin complicaciones y sin costos. <br />2.
+                          Facilita la recepción de la información en formatos
+                          digital más manejables y procesables para buscar datos
+                          y filtrarlos.<br />
+                          3. Le ahorramos papel al planeta.<br /><br />
+                          En algunas ocasiones también se escribe el número
+                          telefónico. Sobre todo, en casos de que algunos
+                          funcionarios requieran información adicional. También
+                          es recomendado que usen este medio las personas con
+                          discapacidad visual.
+                        </p>
+                      </div>
+                      <span class="line"></span>
+                    </div>
                   </span>
                 </div>
               </div>
               <div class="input-contain">
                 <label for="adress_response"
                   >Dirección a donde quieres que te llegue la respuesta de
-                  manera impresa</label
+                  manera impresa - <span>(opcional)</span></label
                 >
                 <div class="input-item">
                   <textarea
@@ -351,6 +448,16 @@
                   ></textarea>
                   <span>
                     <img src="./assets/images/help.svg" alt="" />
+                    <div class="tooltip">
+                      <div class="content">
+                        <p>
+                          Ej: Carrera, Av., Calle, Diagonal, transversal; Nombre
+                          del conjunto, #Apto, #torre; nombre del barrio, nombre
+                          de la ciudad y departamento.
+                        </p>
+                      </div>
+                      <span class="line"></span>
+                    </div>
                   </span>
                 </div>
               </div>
@@ -385,7 +492,10 @@
 
             <div class="form-inputs">
               <div class="input-contain">
-                <label for="name_signature">Nombre(s) y apellido(s)</label>
+                <label for="name_signature"
+                  >Nombre(s) y apellido(s) -
+                  <span class="r">(requerido)</span></label
+                >
                 <div class="input-item">
                   <input
                     type="text"
@@ -395,13 +505,27 @@
                   <span>
                     *
                     <img src="./assets/images/help.svg" alt="" />
+                    <div class="tooltip">
+                      <div class="content">
+                        <p>
+                          Nombre completo para identificar al final. Si la
+                          petición se imprime en físico, encima puede ir la
+                          firma. Si se envía por correo electrónico no hay
+                          necesidad de firma si se envía del correo personal.
+                        </p>
+                      </div>
+                      <span class="line"></span>
+                    </div>
                   </span>
                 </div>
               </div>
 
               <div class="inputs-flex">
                 <div class="input-contain">
-                  <label for="">Número de identificación</label>
+                  <label for=""
+                    >Número de identificación -
+                    <span class="r">(requerido)</span></label
+                  >
                   <div class="input-item">
                     <input
                       type="number"
@@ -411,11 +535,19 @@
                     <span>
                       *
                       <img src="./assets/images/help.svg" alt="" />
+                      <div class="tooltip">
+                        <div class="content">
+                          <p>Solo números, sin espacios</p>
+                        </div>
+                        <span class="line"></span>
+                      </div>
                     </span>
                   </div>
                 </div>
                 <div class="input-contain">
-                  <label for="position_signature">Cargo</label>
+                  <label for="position_signature"
+                    >Cargo - <span>(opcional)</span></label
+                  >
                   <div class="input-item">
                     <input
                       type="text"
@@ -424,6 +556,17 @@
                     />
                     <span>
                       <img src="./assets/images/help.svg" alt="" />
+                      <div class="tooltip">
+                        <div class="content">
+                          <p>
+                            Es opcional. Si se cree que no es necesario, es
+                            posible no escribirlo. Solo sirve para ofrecer más
+                            transparencia a la entidad sobre quién está pidiendo
+                            la información.
+                          </p>
+                        </div>
+                        <span class="line"></span>
+                      </div>
                     </span>
                   </div>
                 </div>
@@ -459,34 +602,36 @@
           </p>
         </div>
         <div class="footer-bottom">
-          <a href="WWW.CUESTIONPUBLICA.COM">WWW.CUESTIONPUBLICA.COM</a>
+          <a href="www.cuestionpublica.com">WWW.CUESTIONPUBLICA.COM</a>
           <ul class="links">
             <li>
-              <a href="">
+              <a href="https://twitter.com/cuestion_p">
                 <span><img src="./assets/images/twitter.svg" alt="" /></span>
                 @CUESTION_P
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/cuestionp">
                 <span><img src="./assets/images/instagram.svg" alt="" /></span>
                 @CUESTIONP
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.facebook.com/cuestionp">
                 <span><img src="./assets/images/facebook.svg" alt="" /></span>
                 @CUESTIONP
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.tiktok.com/@cuestionp">
                 <span><img src="./assets/images/tik-tok.svg" alt="" /></span>
                 @CUESTIONP
               </a>
             </li>
           </ul>
-          <a href="HOLA@CUESTIONPUBLICA.COM">HOLA@CUESTIONPUBLICA.COM</a>
+          <a href="https://cuestionpublica.com/contactanos/"
+            >HOLA@CUESTIONPUBLICA.COM</a
+          >
         </div>
       </div>
     </footer>
@@ -501,7 +646,7 @@
         >
           <img
             class="logo"
-            src="./assets//images/logo-vertical.svg"
+            src="./assets/images/logo-vertical.svg"
             alt="Logo de Cuestión Pública"
           />
           <button
@@ -510,7 +655,7 @@
             aria-label="Close this dialog window"
           >
             <img
-              src="./assets//images/modal-close.svg"
+              src="./assets/images/modal-close.svg"
               alt="icono de cerrar modal"
             />
           </button>
@@ -667,26 +812,6 @@
             })
 
             saveAs(blobDoc, "derecho-de-peticion.docx")
-
-            //  // Para convertir el .docx a pdf
-            //  const pdfContent = {
-            //   content: [
-            //     {
-            //       text: doc.getZip().generate({ type: "blob" }),
-            //       encoding: "base64",
-            //     },
-            //   ],
-            // }
-
-            // // Generar el PDF
-            // const pdfDocGenerator = pdfMake.createPdf(pdfContent)
-            // pdfDocGenerator.getBlob((blob) => {
-            //   // Descargar el archivo PDF resultante
-            //   const downloadLink = document.createElement("a")
-            //   downloadLink.href = URL.createObjectURL(blob)
-            //   downloadLink.download = "documento.pdf"
-            //   downloadLink.click()
-            // })
 
             setTimeout(() => {
               Swal.fire(

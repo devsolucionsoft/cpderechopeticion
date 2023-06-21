@@ -270,6 +270,15 @@ div {
   font-size: 1.8rem;
   font-weight: bold;
 }
+.step-form .section-contain .form .form-inputs .input-contain label span {
+  font-size: inherit;
+  opacity: 0.8;
+  color: rgb(28, 28, 28);
+  font-weight: 600;
+}
+.step-form .section-contain .form .form-inputs .input-contain label .r {
+  color: #df2043;
+}
 .step-form .section-contain .form .form-inputs .input-contain .input-item {
   margin-top: 0.3rem;
   display: flex;
@@ -696,6 +705,18 @@ button.swal2-confirm {
 .modal__container p b {
   font-size: inherit;
   font-weight: 800;
+}
+@media (max-width: 1290px) {
+  .modal__container .logo {
+    width: 100px;
+  }
+  .modal__container p {
+    font-size: 2rem;
+  }
+  .modal__container p b {
+    font-size: inherit;
+    font-weight: 500;
+  }
 }
 @media (max-width: 768px) {
   .modal__container {
