@@ -448,6 +448,42 @@ div {
   position: absolute;
   width: 3.2rem;
 }
+.step-form .section-contain .form .form-inputs .input-contain .textarea-item span .tooltip {
+  position: absolute;
+  bottom: 0rem;
+  right: -5rem;
+  width: 0px;
+  overflow: hidden;
+}
+.step-form .section-contain .form .form-inputs .input-contain .textarea-item span .tooltip .line {
+  height: 4rem;
+  width: 3px;
+  bottom: 2.8rem;
+  right: 6.5rem;
+  position: absolute;
+  background-color: #636267;
+}
+.step-form .section-contain .form .form-inputs .input-contain .textarea-item span .tooltip .content {
+  padding: 2rem 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2392156863);
+  background-color: #636267;
+  margin-bottom: 4rem;
+}
+.step-form .section-contain .form .form-inputs .input-contain .textarea-item span .tooltip .content p {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.step-form .section-contain .form .form-inputs .input-contain .textarea-item span .tooltip .content p b {
+  font-size: inherit;
+  font-weight: bold;
+}
+.step-form .section-contain .form .form-inputs .input-contain .textarea-item span:hover .tooltip {
+  width: 480px;
+  padding: 0 2rem 2rem 0;
+}
 
 .button {
   display: flex;

@@ -483,6 +483,44 @@ div {
                 position: absolute;
                 width: 3.2rem;
               }
+              .tooltip {
+                position: absolute;
+                bottom: 0rem;
+                right: -5rem;
+                width: 0px;
+                overflow: hidden;
+                .line {
+                  height: 4rem;
+                  width: 3px;
+                  bottom: 2.8rem;
+                  right: 6.5rem;
+                  position: absolute;
+                  background-color: #636267;
+                }
+                .content {
+                  padding: 2rem 2.5rem;
+                  border-radius: 2rem;
+                  box-shadow: 6px 6px 6px #0000003d;
+                  background-color: #636267;
+                  margin-bottom: 4rem;
+                  p {
+                    color: $white;
+                    font-size: 1.4rem;
+                    font-family: $font-primary;
+                    font-weight: 500;
+                    b {
+                      font-size: inherit;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+              &:hover {
+                .tooltip {
+                  width: 480px;
+                  padding: 0 2rem 2rem 0;
+                }
+              }
             }
           }
         }
