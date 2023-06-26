@@ -22,6 +22,7 @@ div {
 #header .header-contain {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 0 15%;
 }
 #header .header-contain .content {
@@ -48,6 +49,14 @@ div {
   flex-direction: column;
   justify-content: flex-end;
 }
+#header .header-contain .outstanding .outstanding-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .header-contain .outstanding .outstanding-banner img {
+  width: 33rem;
+}
 #header .header-contain .outstanding .outstanding-content {
   background-color: #5a0e3f;
   padding: 2.5rem 4rem;
@@ -68,6 +77,9 @@ div {
   }
   #header .header-contain .content h1 span {
     font-size: 3.5rem;
+  }
+  #header .header-contain .outstanding .outstanding-banner img {
+    width: 33rem;
   }
   #header .header-contain .outstanding .outstanding-content p {
     font-size: 1rem;

@@ -67,6 +67,7 @@ div {
   .header-contain {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 0 15%;
 
     .content {
@@ -93,6 +94,14 @@ div {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      .outstanding-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 33rem;
+        }
+      }
       .outstanding-content {
         background-color: $purple;
         padding: 2.5rem 4rem;
@@ -119,6 +128,11 @@ div {
         }
       }
       .outstanding {
+        .outstanding-banner {
+          img {
+            width: 33rem;
+          }
+        }
         .outstanding-content {
           p {
             font-size: 1rem;
