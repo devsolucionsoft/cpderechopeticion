@@ -126,7 +126,7 @@ div {
 }
 @media (max-width: 768px) {
   .step-form .section-contain {
-    padding: 0 5%;
+    padding: 0 5% 0 2%;
   }
 }
 .step-form .section-contain header {

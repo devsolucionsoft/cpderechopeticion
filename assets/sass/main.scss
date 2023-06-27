@@ -181,7 +181,7 @@ div {
   .section-contain {
     padding: 0 15%;
     @include screen-md() {
-      padding: 0 5%;
+      padding: 0 5% 0 2%;
     }
     header {
       display: flex;
